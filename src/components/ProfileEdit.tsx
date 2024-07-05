@@ -44,16 +44,19 @@ const ProfileEdit: React.FC = () => {
 
   return (
     <Card
-      className="bg-primary text-white mb-3"
+      className="text-white mb-3"
       style={{
-        width: "30rem",
-        maxWidth: "400px",
+        maxWidth: "30rem",
+        width: "100%",
         margin: "auto",
         marginTop: "20px",
         padding: "20px",
         borderRadius: "15px",
         transition: "all 0.3s ease-in-out",
         boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+        backgroundImage: `url(/bg.jpg)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       <Card.Body>
@@ -93,7 +96,7 @@ const ProfileEdit: React.FC = () => {
               onChange={(e) => dispatch(setSurname(e.target.value))}
             />
           </Form.Group>
-          <div className="my-4">
+          <div className="mt-2">
             <Row className="justify-content-center mb-3">
               <Col xs="auto">
                 <FaTwitter

@@ -26,9 +26,12 @@ const UserDetails: React.FC = () => {
         marginTop: "20px",
         marginBottom: "20px",
         padding: "20px",
-        borderRadius: "10px",
+        borderRadius: "15px",
         transition: "all 0.3s ease-in-out",
         boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+        backgroundImage: `url(/bg.jpg)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       <Card.Body>
